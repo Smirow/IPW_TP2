@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blog</title>
+    <link rel="stylesheet" type="text/css" href="/bootsrap/css/bootstrap.min.css"> 
+    <script src="/jquery-3.2.0.js"></script>
+    <script src="/bootsrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/sticky.css">
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div class="container content">
+      <%= yield %>
+    </div>
+    <div class="footer">
+      <div class="container">
+      <p class="text-muted"><a href="/new">Create a new article.</a></p>      
+      </div>
+    </div>
+  </body>
+</html>
