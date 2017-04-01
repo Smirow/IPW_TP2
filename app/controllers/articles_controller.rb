@@ -13,11 +13,11 @@ class ArticlesController < ApplicationController
 
   def create
    @article = Article.new(article_params)
-  if @article.save
-    redirect_to "/"
-  else
-    redirect_to "/new"
-  end
+    if @article.save
+      redirect_to "/"
+    else
+      redirect_to "/new"
+    end
   end
 
   private
