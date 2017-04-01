@@ -1,7 +1,7 @@
 # README
 
-1/ Go to config/database.yml and change the following:
 ```
+1/ Go to config/database.yml and change the following:
 default: &default
   adapter: postgresql
   encoding: unicode
@@ -11,8 +11,7 @@ default: &default
   username: <DB_USER>
   password: <DB_PASSWORD>
   host: <DB_IP>
-  ```
+
 2/ Start the server:
-```
 bundle exec rails server -p <PORT> -b <BINDING_IP>
 ```
