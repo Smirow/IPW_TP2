@@ -12,3 +12,7 @@ default: &default
   password: <DB_PASSWORD>
   host: <DB_IP>
   ```
+2/ Start the server:
+```
+bundle exec rails server -p <PORT> -b <BINDING_IP>
+```
