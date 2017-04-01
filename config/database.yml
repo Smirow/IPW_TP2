@@ -20,9 +20,9 @@ default: &default
   # For details on connection pooling, see rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  username: simpleUser
-  password: mag
-  host: 172.17.0.2
+  username: simpleUser # Replace with you Database username
+  password: mag # Replace with your Database password
+  host: 172.17.0.2 # Replace with your Database IP
 
 development:
   <<: *default

@@ -4,7 +4,7 @@ class ArticlesController < ApplicationController
   end
 
   def show
-    @article = Article.exists?(params[:id].to_i) ? Article.find(params[:id].to_i) : Article.find(1)   
+    @article = Article.exists?(params[:id].to_i) ? Article.find(params[:id].to_i) : (redirect_to "/")   
   end
 
   def new
