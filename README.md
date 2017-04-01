@@ -12,8 +12,9 @@ default: &default
   password: <DB_PASSWORD>
   host: <DB_IP>
 
-2/ Install gems: 
+2/ Install gems & feed DB: 
 bundle install
+bundle exec rake db:drop db:create db:migrate db:seed
 
 3/ Start the server:
 bundle exec rails server -p <PORT> -b <BINDING_IP>
